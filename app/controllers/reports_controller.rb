@@ -65,6 +65,6 @@ class ReportsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def report_params
-      params.require(:report).permit(:week_ending, :rating)
+      params.require(:report).permit(:week_ending, :rating, :completed, :upcoming, :notes)
     end
 end

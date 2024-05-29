@@ -1,24 +1,20 @@
-# README
+Weekend project: A simple weekly report application
+ - Create a weekly report to send to interested parties
+ - Choose a date for week ending (usually Friday)
+ - Rate your week 1..5, 1 = Bad week, 5 = Great week
+ - Create three WYSIWYG Action Text items
+   - Completed (what was completed during the week)
+   - Upcoming (Items upcoming for the next week)
+   - Any notes to be mentioned for the weekly report
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Uses built-in Rails features:
+ - a splash of Turbo
+ - Action Text
+ - Mini Test
 
-* Ruby version
+A splash of CSS:
+- Bootstrap, everyone's first love <3 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Server Requirements 
+- vips for Action Text images

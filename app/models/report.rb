@@ -5,7 +5,7 @@ class Report < ApplicationRecord
   validates :rating, presence: true
 
   has_rich_text :completed
-  has_rich_text :upgcoming
+  has_rich_text :upcoming
   has_rich_text :notes
 
 end
