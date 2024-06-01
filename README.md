@@ -1,4 +1,4 @@
-Weekend project: A simple weekly report application
+#Weekend project: A simple weekly report application
  - Create a weekly report to send to interested parties
  - Choose a date for week ending (usually Friday)
  - Rate your week 1..5, 1 = Bad week, 5 = Great week
