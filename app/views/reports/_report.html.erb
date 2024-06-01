@@ -1,16 +1,29 @@
 <div id="<%= dom_id report %>">
-  <p>
-    <strong>Week ending:</strong>
-    <%= report.week_ending %>
-  </p>
 
-  <p>
-    <strong>Rating:</strong>
-    <%= report.rating %>
-  </p>
 
-  <p>
+  <!-- Date and rating section -->
+  <div class="container">
+    <div class="row week-ending-container">
+      <div class="col-6">
+        <h4>Week ending:  <%= report.week_ending.strftime("%m/%d/%Y") %></h4>
+      </div>
+      <div class="col-6">
+        <h4>Rating: <%=define_rating(report.rating) %></h4>
+      </div>
+    </div>
+  </div> <!-- end date and rating section -->
+
+  <div class="container card card-body">
     <strong>Completed Tasks</strong>
     <%= report.completed %>
-  </p>
+    <strong>Upcoming Tasks</strong>
+    <%= report.upcoming %>
+    <strong>Notes</strong>
+    <%= report.notes %>
+  </div>
+
 </div>
+
+<style>
+
+</style>

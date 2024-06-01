@@ -1,0 +1,26 @@
+
+$white: #ffffff;
+
+$theme-colors: (
+        "light":      #e2e3e2,
+        "dark":       #040000,
+        "primary":    #245896,
+        "secondary":  #504d56,
+        "info":       #af1928,
+        "success":    #179757,
+        "warning":    #dfc71a,
+        "danger":     #ec160b,
+);
+
+
+.week-ending-container {
+  background: whitesmoke;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
+.report-show-container {
+
+}

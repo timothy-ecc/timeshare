@@ -14,9 +14,10 @@ class ReportsTest < ApplicationSystemTestCase
     visit reports_url
     click_on "New report"
 
-    fill_in "Rating", with: @report.rating
+    # fill_in "Rating", with: @report.rating
+    choose('report_rating_1')
     fill_in "Week ending", with: @report.week_ending
-    click_on "Create Report"
+    click_on "Submit"
 
     assert_text "Report was successfully created"
     click_on "Back"
