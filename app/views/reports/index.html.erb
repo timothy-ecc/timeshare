@@ -10,7 +10,7 @@
         <thead>
         <tr>
           <th>Week Ending</th>
-          <th></th>
+          <th>Rating</th>
         </tr>
         </thead>
         <tbody>
@@ -18,7 +18,10 @@
           <tr onclick="location.href='<%= report_path(report) %>'" >
 
             <td>
-              <%= report.week_ending %>
+              <%= report.week_ending.strftime("%m/%d/%Y") %>
+            </td>
+            <td>
+              <%= define_rating(report.rating) %>
             </td>
           </tr>
           <p>

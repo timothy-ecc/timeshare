@@ -3,25 +3,31 @@
 
   <!-- Date and rating section -->
   <div class="container">
-    <div class="row week-ending-container">
+    <div class="row week-ending-row">
       <div class="col-6">
         <h4>Week ending:  <%= report.week_ending.strftime("%m/%d/%Y") %></h4>
       </div>
       <div class="col-6">
-        <h4>Rating: <%=define_rating(report.rating) %></h4>
+        <h4>Rating: <%= define_rating(report.rating) %></h4>
       </div>
     </div>
   </div> <!-- end date and rating section -->
 
-  <div class="container card card-body">
-    <strong>Completed Tasks</strong>
+  <div class="container report-header">
+    <h4>Accomplishments/Tasks Completed This Week</h4>
     <%= report.completed %>
-    <strong>Upcoming Tasks</strong>
-    <%= report.upcoming %>
-    <strong>Notes</strong>
-    <%= report.notes %>
   </div>
 
+
+  <div class="container report-header">
+    <h4>Upcoming Tasks Next Week</h4>
+    <%= report.upcoming %>
+  </div>
+  <div class="container report-header">
+    <h4>Notes</h4>
+    <%= report.notes %>
+  </div>
+</div>
 </div>
 
 <style>
