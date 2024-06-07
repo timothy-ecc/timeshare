@@ -1,4 +1,5 @@
-# Weekend project idea: A simple weekly report application
+# A weekly report application
+ - A simplified clone of commercial reporting applications, using all the good bits and leaving out the fluff. 
  - Create a weekly report to send to interested parties
  - Choose a date for week ending (usually Friday)
  - Rate your week 1..5, 1 = Bad week, 5 = Great week
